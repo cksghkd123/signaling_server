@@ -56,6 +56,10 @@ public class SignalHandler extends TextWebSocketHandler {
         System.out.println("현재 존재하는 방 ID들:");
         for (Long roomId : chatRooms.keySet()) {
             System.out.println("방 ID: " + roomId);
+            Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
+            for (String d: clients.keySet()) {
+                System.out.println("맴버: " + d);
+            }
         }
         super.afterConnectionEstablished(session);
     }

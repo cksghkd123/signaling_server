@@ -1,0 +1,37 @@
+"2024-01-17 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-17 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@676c0345
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36f6e3cd
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-17 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@501d9cc0
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-17 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=0c9e006a-6d0d-bd39-15d9-b3fd92f249a4, uri=ws://localhost:8080/signal]
+""2024-01-17 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-17 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@501d9cc0
+""2024-01-17 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-17 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-17 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=76511671-06d3-a3b8-b044-c997c064f6cf, uri=ws://localhost:8080/signal]
+""2024-01-17 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=0c9e006a-6d0d-bd39-15d9-b3fd92f249a4, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-17 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=76511671-06d3-a3b8-b044-c997c064f6cf, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-17 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-17 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@501d9cc0
+""2024-01-17 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-17 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-17 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=ca226c9c-9563-dda7-ded2-bd140a0cff0b, uri=ws://localhost:8080/signal]
+""2024-01-17 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=ca226c9c-9563-dda7-ded2-bd140a0cff0b, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+"
