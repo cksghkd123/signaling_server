@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
+import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
@@ -61,7 +62,14 @@ public class SignalHandler extends TextWebSocketHandler {
                 System.out.println("맴버: " + d);
             }
         }
-        super.afterConnectionEstablished(session);
+        SignalData sd = SignalData.builder()
+                .sender("Server")
+                .signalType("Join")
+                .data(Boolean.toString(!sessionIdToRoomMap.isEmpty()))
+                .IceCandidate(null)
+                .sdp(null)
+                .build();
+        session.sendMessage(new TextMessage(objectMapper.writeValueAsString(sd)));
     }
 
     @Override
