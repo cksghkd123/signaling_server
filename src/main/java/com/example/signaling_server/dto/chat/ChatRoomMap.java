@@ -10,7 +10,7 @@ import java.util.Map;
 @Setter
 public class ChatRoomMap {
     private static final ChatRoomMap chatRoomMap = new ChatRoomMap();
-    private Map<String, ChatRoom> chatRooms = new LinkedHashMap<>();
+    private Map<Long, ChatRoom> chatRooms = new LinkedHashMap<>();
 
     private ChatRoomMap(){}
 

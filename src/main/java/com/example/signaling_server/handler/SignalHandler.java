@@ -1,6 +1,7 @@
 package com.example.signaling_server.handler;
 
 import com.example.signaling_server.dto.chat.ChatRoom;
+import com.example.signaling_server.dto.chat.ChatRoomMap;
 import com.example.signaling_server.dto.chat.SignalData;
 import com.example.signaling_server.dto.chat.SignalType;
 import com.example.signaling_server.service.ChatService;
@@ -11,7 +12,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
-import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
@@ -23,6 +23,7 @@ import java.util.*;
 public class SignalHandler extends TextWebSocketHandler {
 
     private final ChatService chatService;
+    private final Map<Long, ChatRoom> chatRooms = ChatRoomMap.getInstance().getChatRooms();
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private final ObjectMapper objectMapper = new ObjectMapper();
     private Map<String, ChatRoom> sessionIdToRoomMap = new HashMap<>();
@@ -30,8 +31,32 @@ public class SignalHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
+        if (chatRooms.isEmpty()) {
+            ChatRoom room = ChatRoom.builder()
+                    .roomId(1L)
+                    .roomName("1번방")
+                    .roomPwd("password") // 채팅방 패스워드
+                    .userCount(0) // 채팅방 참여 인원수
+                    .maxUserCnt(2) // 최대 인원수 제한
+                    .clients(new HashMap<String, WebSocketSession>())
+                    .build();
+
+            chatRooms.put(room.getRoomId(), room);
+
+            room.getClients().put("1", session);
+
+        } else {
+            ChatRoom room = chatRooms.get(1L);
+            room.getClients().put("2", session);
+
+        }
+
         connectedSessions.add(session);
         System.out.println("들어왔따~~");
+        System.out.println("현재 존재하는 방 ID들:");
+        for (Long roomId : chatRooms.keySet()) {
+            System.out.println("방 ID: " + roomId);
+        }
         super.afterConnectionEstablished(session);
     }
 
@@ -56,10 +81,8 @@ public class SignalHandler extends TextWebSocketHandler {
         if (signalData.getSignalType().equalsIgnoreCase(SignalType.Join.toString())) {
             logger.debug("[ws] {} has joined Room: #{}", sender, data);
 
-            chatRoom = chatService.findRoomByStringId(data)
-                    .orElseThrow(() -> new IOException("Invalid room number received!"));
+            chatRoom = chatService.findRoomById(Long.parseLong(data));
             // add client to the Room clients list
-
 
             chatService.addClient(chatRoom, sender, session);
             sessionIdToRoomMap.put(session.getId(), chatRoom);
@@ -102,7 +125,7 @@ public class SignalHandler extends TextWebSocketHandler {
                  *
                  * 여기를 고치면 1:1 대신 1:N 으로 바꿀 수 있지 않을까..?
                  */
-                for(Map.Entry<String, WebSocketSession> client : clients.entrySet())  {
+                for (Map.Entry<String, WebSocketSession> client : clients.entrySet()) {
 
                     // send messages to all clients except current user
                     if (!client.getKey().equals(sender)) {
@@ -117,6 +140,7 @@ public class SignalHandler extends TextWebSocketHandler {
                         client.getValue().sendMessage(new TextMessage(objectMapper.writeValueAsString(sd)));
                     }
                 }
+
             }
 
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Answer.toString())) {
@@ -141,7 +165,7 @@ public class SignalHandler extends TextWebSocketHandler {
                  *
                  * 여기를 고치면 1:1 대신 1:N 으로 바꿀 수 있지 않을까..?
                  */
-                for(Map.Entry<String, WebSocketSession> client : clients.entrySet())  {
+                for (Map.Entry<String, WebSocketSession> client : clients.entrySet()) {
 
                     // send messages to all clients except current user
                     if (!client.getKey().equals(sender)) {
@@ -180,7 +204,7 @@ public class SignalHandler extends TextWebSocketHandler {
                  *
                  * 여기를 고치면 1:1 대신 1:N 으로 바꿀 수 있지 않을까..?
                  */
-                for(Map.Entry<String, WebSocketSession> client : clients.entrySet())  {
+                for (Map.Entry<String, WebSocketSession> client : clients.entrySet()) {
 
                     // send messages to all clients except current user
                     if (!client.getKey().equals(sender)) {
