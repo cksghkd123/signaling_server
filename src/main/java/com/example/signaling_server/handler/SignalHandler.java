@@ -12,11 +12,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
-import org.springframework.web.socket.WebSocketMessage;
 import org.springframework.web.socket.WebSocketSession;
 import org.springframework.web.socket.handler.TextWebSocketHandler;
 
-import java.io.IOException;
 import java.util.*;
 
 @Component
@@ -58,7 +56,7 @@ public class SignalHandler extends TextWebSocketHandler {
         for (Long roomId : chatRooms.keySet()) {
             System.out.println("방 ID: " + roomId);
             Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
-            for (String d: clients.keySet()) {
+            for (String d : clients.keySet()) {
                 System.out.println("멤버: " + d);
             }
         }
@@ -94,7 +92,7 @@ public class SignalHandler extends TextWebSocketHandler {
         ChatRoom chatRoom;
 
         if (signalData.getSignalType().equalsIgnoreCase(SignalType.Join.toString())) {
-            System.out.println("[ws] {} has joined Room: #{}"+ sender+ data);
+            System.out.println("[ws] {} has joined Room: #{}" + sender + data);
             logger.debug("[ws] {} has joined Room: #{}", sender, data);
 
             chatRoom = chatService.findRoomById(Long.parseLong(data));
@@ -106,7 +104,7 @@ public class SignalHandler extends TextWebSocketHandler {
             return;
 
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Leave.toString())) {
-            System.out.println("[ws] {} is going to leave Room: #{}"+ sender+ data);
+            System.out.println("[ws] {} is going to leave Room: #{}" + sender + data);
             logger.debug("[ws] {} is going to leave Room: #{}", sender, data);
 
             chatRoom = sessionIdToRoomMap.get(session.getId());
@@ -120,33 +118,20 @@ public class SignalHandler extends TextWebSocketHandler {
             return;
 
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Offer.toString())) {
-
             Object iceCandidate = signalData.getIceCandidate();
             Object sdp = signalData.getSdp();
-            System.out.println("[ws] Signal: {}"+
-                    iceCandidate != null
-                            ? iceCandidate.toString().substring(0, 64)
-                            : sdp.toString().substring(0, 64));
+            System.out.println("[ws] offer offer");
             logger.debug("[ws] Signal: {}",
                     iceCandidate != null
                             ? iceCandidate.toString().substring(0, 64)
                             : sdp.toString().substring(0, 64));
 
-            /* 여기도 마찬가지 */
             ChatRoom room = sessionIdToRoomMap.get(session.getId());
 
             if (room != null) {
                 Map<String, WebSocketSession> clients = chatService.getClients(room);
 
-                /*
-                 * Map.Entry 는 Map 인터페이스 내부에서 Key, Value 를 쌍으로 다루기 위해 정의된 내부 인터페이스
-                 * 보통 key 값들을 가져오는 entrySet() 과 함께 사용한다.
-                 * entrySet 을 통해서 key 값들을 불러온 후 Map.Entry 를 사용하면서 Key 에 해당하는 Value 를 쌍으로 가져온다
-                 *
-                 * 여기를 고치면 1:1 대신 1:N 으로 바꿀 수 있지 않을까..?
-                 */
                 for (Map.Entry<String, WebSocketSession> client : clients.entrySet()) {
-
                     // send messages to all clients except current user
                     if (!client.getKey().equals(sender)) {
                         // select the same type to resend signal
@@ -166,7 +151,7 @@ public class SignalHandler extends TextWebSocketHandler {
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Answer.toString())) {
             Object iceCandidate = signalData.getIceCandidate();
             Object sdp = signalData.getSdp();
-            System.out.println();
+            System.out.println("[ws] answer answer");
             logger.debug("[ws] Signal: {}",
                     iceCandidate != null
                             ? iceCandidate.toString().substring(0, 64)
@@ -205,6 +190,8 @@ public class SignalHandler extends TextWebSocketHandler {
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Ice.toString())) {
             Object iceCandidate = signalData.getIceCandidate();
             Object sdp = signalData.getSdp();
+
+            System.out.println("[ws] Ice Ice");
 
             logger.debug("[ws] Signal: {}",
                     iceCandidate != null
