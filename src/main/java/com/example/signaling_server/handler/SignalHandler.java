@@ -64,7 +64,7 @@ public class SignalHandler extends TextWebSocketHandler {
                 .sender("Server")
                 .signalType("Join")
                 .data(Boolean.toString(!sessionIdToRoomMap.isEmpty()))
-                .IceCandidate(null)
+                .iceCandidate(null)
                 .sdp(null)
                 .build();
         session.sendMessage(new TextMessage(objectMapper.writeValueAsString(sd)));
@@ -137,7 +137,7 @@ public class SignalHandler extends TextWebSocketHandler {
                         // select the same type to resend signal
                         SignalData sd = SignalData.builder()
                                 .data(data)
-                                .IceCandidate(iceCandidate)
+                                .iceCandidate(iceCandidate)
                                 .sdp(sdp)
                                 .sender(sender)
                                 .signalType(signalData.getSignalType())
@@ -177,7 +177,7 @@ public class SignalHandler extends TextWebSocketHandler {
                         // select the same type to resend signal
                         SignalData sd = SignalData.builder()
                                 .data(data)
-                                .IceCandidate(iceCandidate)
+                                .iceCandidate(iceCandidate)
                                 .sdp(sdp)
                                 .sender(sender)
                                 .signalType(signalData.getSignalType())
@@ -218,7 +218,7 @@ public class SignalHandler extends TextWebSocketHandler {
                         // select the same type to resend signal
                         SignalData sd = SignalData.builder()
                                 .data(data)
-                                .IceCandidate(iceCandidate)
+                                .iceCandidate(iceCandidate)
                                 .sdp(sdp)
                                 .sender(sender)
                                 .signalType(signalData.getSignalType())
