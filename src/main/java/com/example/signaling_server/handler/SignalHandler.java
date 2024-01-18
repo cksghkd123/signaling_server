@@ -59,7 +59,7 @@ public class SignalHandler extends TextWebSocketHandler {
             System.out.println("방 ID: " + roomId);
             Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
             for (String d: clients.keySet()) {
-                System.out.println("맴버: " + d);
+                System.out.println("멤버: " + d);
             }
         }
         SignalData sd = SignalData.builder()
@@ -87,10 +87,14 @@ public class SignalHandler extends TextWebSocketHandler {
 
         String sender = signalData.getSender(); // origin of the message
         String data = signalData.getData(); // payload
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@");
+        System.out.println(signalData.getSignalType());
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@");
 
         ChatRoom chatRoom;
 
         if (signalData.getSignalType().equalsIgnoreCase(SignalType.Join.toString())) {
+            System.out.println("[ws] {} has joined Room: #{}"+ sender+ data);
             logger.debug("[ws] {} has joined Room: #{}", sender, data);
 
             chatRoom = chatService.findRoomById(Long.parseLong(data));
@@ -102,6 +106,7 @@ public class SignalHandler extends TextWebSocketHandler {
             return;
 
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Leave.toString())) {
+            System.out.println("[ws] {} is going to leave Room: #{}"+ sender+ data);
             logger.debug("[ws] {} is going to leave Room: #{}", sender, data);
 
             chatRoom = sessionIdToRoomMap.get(session.getId());
@@ -118,7 +123,10 @@ public class SignalHandler extends TextWebSocketHandler {
 
             Object iceCandidate = signalData.getIceCandidate();
             Object sdp = signalData.getSdp();
-
+            System.out.println("[ws] Signal: {}"+
+                    iceCandidate != null
+                            ? iceCandidate.toString().substring(0, 64)
+                            : sdp.toString().substring(0, 64));
             logger.debug("[ws] Signal: {}",
                     iceCandidate != null
                             ? iceCandidate.toString().substring(0, 64)
@@ -158,7 +166,7 @@ public class SignalHandler extends TextWebSocketHandler {
         } else if (signalData.getSignalType().equalsIgnoreCase(SignalType.Answer.toString())) {
             Object iceCandidate = signalData.getIceCandidate();
             Object sdp = signalData.getSdp();
-
+            System.out.println();
             logger.debug("[ws] Signal: {}",
                     iceCandidate != null
                             ? iceCandidate.toString().substring(0, 64)
