@@ -57,7 +57,15 @@ public class SignalHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
+        ChatRoom chatRoom = sessionIdToRoomMap.get(session.getId());
+        // remove the client which leaves from the Room clients list
+        Optional<String> client = chatService.getClients(chatRoom).entrySet().stream()
+                .filter(entry -> Objects.equals(entry.getValue().getId(), session.getId()))
+                .map(Map.Entry::getKey)
+                .findAny();
+        client.ifPresent(c -> chatService.removeClientByName(chatRoom, c));
         sessionIdToRoomMap.remove(session.getId());
+
         System.out.println("나갔다~~");
         System.out.println("현재 존재하는 방 ID들:");
         for (Long roomId : chatRooms.keySet()) {
