@@ -26,7 +26,6 @@ public class SignalHandler extends TextWebSocketHandler {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
     private final ObjectMapper objectMapper = new ObjectMapper();
     private Map<String, ChatRoom> sessionIdToRoomMap = new HashMap<>();
-    private List<WebSocketSession> connectedSessions = new LinkedList<WebSocketSession>();
 
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
@@ -42,24 +41,10 @@ public class SignalHandler extends TextWebSocketHandler {
 
             chatRooms.put(room.getRoomId(), room);
 
-            room.getClients().put("1", session);
-
-        } else {
-            ChatRoom room = chatRooms.get(1L);
-            room.getClients().put("2", session);
-
         }
 
-        connectedSessions.add(session);
         System.out.println("들어왔따~~");
-        System.out.println("현재 존재하는 방 ID들:");
-        for (Long roomId : chatRooms.keySet()) {
-            System.out.println("방 ID: " + roomId);
-            Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
-            for (String d : clients.keySet()) {
-                System.out.println("멤버: " + d);
-            }
-        }
+
         SignalData sd = SignalData.builder()
                 .sender("Server")
                 .signalType("Join")
@@ -72,8 +57,16 @@ public class SignalHandler extends TextWebSocketHandler {
 
     @Override
     public void afterConnectionClosed(WebSocketSession session, CloseStatus status) throws Exception {
-        connectedSessions.remove(session);
+        sessionIdToRoomMap.remove(session.getId());
         System.out.println("나갔다~~");
+        System.out.println("현재 존재하는 방 ID들:");
+        for (Long roomId : chatRooms.keySet()) {
+            System.out.println("방 ID: " + roomId);
+            Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
+            for (String d : clients.keySet()) {
+                System.out.println("멤버: " + d);
+            }
+        }
         logger.debug("오잉?");
         super.afterConnectionClosed(session, status);
     }
@@ -92,7 +85,9 @@ public class SignalHandler extends TextWebSocketHandler {
         ChatRoom chatRoom;
 
         if (signalData.getSignalType().equalsIgnoreCase(SignalType.Join.toString())) {
-            System.out.println("[ws] {} has joined Room: #{}" + sender + data);
+            System.out.println("[ws] "+sender+" has joined Room: #"+ data);
+
+
             logger.debug("[ws] {} has joined Room: #{}", sender, data);
 
             chatRoom = chatService.findRoomById(Long.parseLong(data));
@@ -100,6 +95,15 @@ public class SignalHandler extends TextWebSocketHandler {
 
             chatService.addClient(chatRoom, sender, session);
             sessionIdToRoomMap.put(session.getId(), chatRoom);
+
+            System.out.println("현재 존재하는 방 ID들:");
+            for (Long roomId : chatRooms.keySet()) {
+                System.out.println("방 ID: " + roomId);
+                Map<String, WebSocketSession> clients = chatService.getClients(chatRooms.get(roomId));
+                for (String d : clients.keySet()) {
+                    System.out.println("멤버: " + d);
+                }
+            }
 
             return;
 

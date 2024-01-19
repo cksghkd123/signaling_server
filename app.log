@@ -1,22 +1,461 @@
-"2024-01-18 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3e9e301f
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3059d9bc
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@4b7a258c
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=00a9daf7-81d0-c160-ba00-60b66c28c754, uri=ws://localhost:8080/signal]
-""2024-01-18 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=00a9daf7-81d0-c160-ba00-60b66c28c754, uri=ws://localhost:8080/signal]
+"2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70100df1
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4ed6c2c4
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@4cffd835
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=7ab67b9c-42b6-2f5f-e4c6-fe9bc6e6e50d, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=7ab67b9c-42b6-2f5f-e4c6-fe9bc6e6e50d, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1a951cf7
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1452e1d5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@5dd8357
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=0ac9b076-9c60-5bce-f914-4a858cdcb2d6, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=0ac9b076-9c60-5bce-f914-4a858cdcb2d6, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@5dd8357
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e7f85684-a7e7-dfa5-7bdc-b0a2df6851f7, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-4] ERROR o.s.w.s.h.ExceptionWebSocketHandlerDecorator - Closing session due to exception for StandardWebSocketSession[id=e7f85684-a7e7-dfa5-7bdc-b0a2df6851f7, uri=ws://localhost:8080/signal]
+"java.lang.IllegalStateException: The WebSocket session [1] has been closed and no method (apart from close()) may be called on a closed session
+	at org.apache.tomcat.websocket.WsSession.checkState(WsSession.java:978) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.getBasicRemote(WsSession.java:529) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at com.example.signaling_server.handler.SignalHandler.handleTextMessage(SignalHandler.java:145) ~[main/:na]
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+"2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.a.NativeWebSocketSession - Closing StandardWebSocketSession[id=e7f85684-a7e7-dfa5-7bdc-b0a2df6851f7, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=e7f85684-a7e7-dfa5-7bdc-b0a2df6851f7, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1011, reason=null]
+""2024-01-19 [http-nio-8080-exec-4] ERROR o.s.w.s.h.ExceptionWebSocketHandlerDecorator - Closing session due to exception for StandardWebSocketSession[id=e7f85684-a7e7-dfa5-7bdc-b0a2df6851f7, uri=ws://localhost:8080/signal]
+"java.lang.IllegalStateException: The WebSocket session [1] has been closed and no method (apart from close()) may be called on a closed session
+	at org.apache.tomcat.websocket.WsSession.checkState(WsSession.java:978) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.getBasicRemote(WsSession.java:529) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketSession.sendTextMessage(StandardWebSocketSession.java:215) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.AbstractWebSocketSession.sendMessage(AbstractWebSocketSession.java:108) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at com.example.signaling_server.handler.SignalHandler.handleTextMessage(SignalHandler.java:226) ~[main/:na]
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81) ~[spring-websocket-6.1.2.jar:6.1.2]
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+"2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@676c0345
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@36f6e3cd
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3ecf1e84
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=517d4d3b-6976-4efa-671c-5ad8cf5a9cc7, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=517d4d3b-6976-4efa-671c-5ad8cf5a9cc7, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@3ecf1e84
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=ec8ee37c-d274-5128-2fd5-7080ae8deea5, uri=ws://localhost:8080/signal]
+""2024-01-19 [Thread-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=ec8ee37c-d274-5128-2fd5-7080ae8deea5, uri=ws://localhost:8080/signal]
+"java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:718)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:587)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:554)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:542)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1019)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4466)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5093)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:969)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:498)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:297)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:370)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1091)
+	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
+	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
+	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:607)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:269)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1635)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:165)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308)
+	... 36 common frames omitted
+"2024-01-19 [Thread-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=ec8ee37c-d274-5128-2fd5-7080ae8deea5, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19695263
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@17aebf3e
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=6942cdfc-f303-0c85-c2f3-a2f3e42cf91f, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=6942cdfc-f303-0c85-c2f3-a2f3e42cf91f, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3196a7c5-580b-a5c0-507a-c06f87225251, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3196a7c5-580b-a5c0-507a-c06f87225251, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=62e08080-60d5-0f61-1264-bb88651718e6, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=62e08080-60d5-0f61-1264-bb88651718e6, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=c0ce0891-1d42-616f-5628-d723913a61ec, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=c0ce0891-1d42-616f-5628-d723913a61ec, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=edf1ab2e-7ec4-8a53-dbda-e49a1e7d507f, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=edf1ab2e-7ec4-8a53-dbda-e49a1e7d507f, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=d8470061-b08d-e50d-5e7d-b0fd2a465c66, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=d8470061-b08d-e50d-5e7d-b0fd2a465c66, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=73794bc2-c08a-ba9f-7456-f9cc1ee37db2, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=73794bc2-c08a-ba9f-7456-f9cc1ee37db2, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=a8bf4282-8418-9a47-9a61-98053338b1b0, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=a8bf4282-8418-9a47-9a61-98053338b1b0, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=null]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=8da3af90-bb91-20f6-8a2c-15b13775a019, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=8da3af90-bb91-20f6-8a2c-15b13775a019, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=d50da4ca-731b-f329-cfb5-1ad490d2cf21, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=d50da4ca-731b-f329-cfb5-1ad490d2cf21, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=null]
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=89599be0-aa53-92f8-9b20-43b0819a5920, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=89599be0-aa53-92f8-9b20-43b0819a5920, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=f85d8dc7-38c6-5613-d851-ca2eab028b9c, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=f85d8dc7-38c6-5613-d851-ca2eab028b9c, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=eca3d36d-eb4b-c5de-7cca-248ad799b628, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=eca3d36d-eb4b-c5de-7cca-248ad799b628, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=1e3a101e-f3b7-a764-2153-791ef24d99fa, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=1e3a101e-f3b7-a764-2153-791ef24d99fa, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=ebdc4829-8077-38d9-d44c-d1b1584efb6b, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=ebdc4829-8077-38d9-d44c-d1b1584efb6b, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=466560c5-a907-764f-2cbb-bc9d554e06b9, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=466560c5-a907-764f-2cbb-bc9d554e06b9, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=f0b24361-8f65-9dea-9e5b-647ae7eb5e71, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=f0b24361-8f65-9dea-9e5b-647ae7eb5e71, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e785be53-c2dc-1899-0f5e-d53fc83ea72d, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=e785be53-c2dc-1899-0f5e-d53fc83ea72d, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=1bfb3fc0-e3d7-2212-ab92-f71aacd3ec80, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=1bfb3fc0-e3d7-2212-ab92-f71aacd3ec80, uri=ws://localhost:8080/signal]
+"java.io.EOFException: null
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.fillReadBuffer(NioEndpoint.java:1296) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.read(NioEndpoint.java:1184) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:74) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+"2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=1bfb3fc0-e3d7-2212-ab92-f71aacd3ec80, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1006, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=67a01dcd-8997-3231-f420-5859c797e49c, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=67a01dcd-8997-3231-f420-5859c797e49c, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=be535ffc-68f3-42cb-1d1c-000f9178fb4c, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=be535ffc-68f3-42cb-1d1c-000f9178fb4c, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=a4610d42-b089-6108-9988-2f45cdbb6a5f, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=a4610d42-b089-6108-9988-2f45cdbb6a5f, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-6] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=e0969da4-b200-f719-eea6-4a3dc653eb28, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=e0969da4-b200-f719-eea6-4a3dc653eb28, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=null]
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-9] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=6f39b314-c93e-1faa-ce97-d059dcb393e7, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=6f39b314-c93e-1faa-ce97-d059dcb393e7, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=bb1c3134-77bc-7294-67ad-0f9d3ee91f88, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=bb1c3134-77bc-7294-67ad-0f9d3ee91f88, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=0d45dce8-ce54-10bb-f9fd-bc03f8fb9bde, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=0d45dce8-ce54-10bb-f9fd-bc03f8fb9bde, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=3fcec077-1038-c91d-a90b-dac530dc642c, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-10] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=3fcec077-1038-c91d-a90b-dac530dc642c, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=b509721b-99e4-46a3-9595-ac43ab5ff4c1, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=b509721b-99e4-46a3-9595-ac43ab5ff4c1, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@161898b5
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=8d075a5b-fd49-1d4f-27e6-39f49613315f, uri=ws://localhost:8080/signal]
+""2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=8d075a5b-fd49-1d4f-27e6-39f49613315f, uri=ws://localhost:8080/signal]
 "java.io.IOException: java.nio.channels.ClosedChannelException
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
@@ -67,26 +506,26 @@ Caused by: java.nio.channels.ClosedChannelException: null
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
 	... 37 common frames omitted
-"2024-01-18 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=00a9daf7-81d0-c160-ba00-60b66c28c754, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@d7c27cf
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6d1f9043
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@26664166
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=13658cc6-711d-3e27-dba0-52ca24beb9a4, uri=ws://localhost:8080/signal]
-""2024-01-18 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=13658cc6-711d-3e27-dba0-52ca24beb9a4, uri=ws://localhost:8080/signal]
+"2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=8d075a5b-fd49-1d4f-27e6-39f49613315f, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@48f4d424
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@347c65b8
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@72951647
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=d36ff7ca-17ef-0173-03f3-d979de34b522, uri=ws://localhost:8080/signal]
+""2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=d36ff7ca-17ef-0173-03f3-d979de34b522, uri=ws://localhost:8080/signal]
 "java.io.IOException: java.nio.channels.ClosedChannelException
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321)
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257)
@@ -137,26 +576,26 @@ Caused by: java.nio.channels.ClosedChannelException: null
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516)
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308)
 	... 37 common frames omitted
-"2024-01-18 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=13658cc6-711d-3e27-dba0-52ca24beb9a4, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6a60ca34
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@18f3059e
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-""2024-01-18 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@7c773911
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
-""2024-01-18 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=25bb9a6e-376c-ac06-4601-742b892642a5, uri=ws://localhost:8080/signal]
-""2024-01-18 [Thread-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=25bb9a6e-376c-ac06-4601-742b892642a5, uri=ws://localhost:8080/signal]
+"2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=d36ff7ca-17ef-0173-03f3-d979de34b522, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@d7c27cf
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6d1f9043
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@79f77c4c
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=220e57e4-603b-6fea-ce15-77ec3f8ffcc1, uri=ws://localhost:8080/signal]
+""2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=220e57e4-603b-6fea-ce15-77ec3f8ffcc1, uri=ws://localhost:8080/signal]
 "java.io.IOException: java.nio.channels.ClosedChannelException
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321)
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257)
@@ -192,9 +631,10 @@ Caused by: java.nio.channels.ClosedChannelException: null
 	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:370)
 	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177)
 	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1091)
-	at org.springframework.boot.devtools.restart.Restarter.stop(Restarter.java:308)
-	at org.springframework.boot.devtools.restart.Restarter.lambda$restart$1(Restarter.java:250)
-	at org.springframework.boot.devtools.restart.Restarter$LeakSafeThread.run(Restarter.java:607)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
+	at java.base/java.lang.Thread.run(Thread.java:840)
 Caused by: java.nio.channels.ClosedChannelException: null
 	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:269)
 	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1635)
@@ -205,11 +645,99 @@ Caused by: java.nio.channels.ClosedChannelException: null
 	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:165)
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516)
 	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308)
-	... 36 common frames omitted
-"2024-01-18 [Thread-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=25bb9a6e-376c-ac06-4601-742b892642a5, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-""2024-01-18 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+	... 37 common frames omitted
+"2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=220e57e4-603b-6fea-ce15-77ec3f8ffcc1, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Patterns [/signal] in 'webSocketHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+""2024-01-19 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1bbeafc7
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@512006d4
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+""2024-01-19 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@1a0658b0
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-1] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=cef2155c-36fc-c575-b1ad-496d7342acf8, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-2] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=cef2155c-36fc-c575-b1ad-496d7342acf8, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@1a0658b0
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-3] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=ca1e1067-78c2-a3ad-cb18-2966e6d886d7, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-4] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=ca1e1067-78c2-a3ad-cb18-2966e6d886d7, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@1a0658b0
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-5] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=51a767b3-6ec2-907a-2bdd-f18d46bd1a23, uri=ws://localhost:8080/signal]
+""2024-01-19 [http-nio-8080-exec-7] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=51a767b3-6ec2-907a-2bdd-f18d46bd1a23, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1000, reason=null]
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/signal", parameters={}
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@1a0658b0
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.s.s.WebSocketHttpRequestHandler - GET /signal
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+""2024-01-19 [http-nio-8080-exec-8] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=334107af-a95a-190d-f2c4-0fc103deadd3, uri=ws://localhost:8080/signal]
+""2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=334107af-a95a-190d-f2c4-0fc103deadd3, uri=ws://localhost:8080/signal]
+"java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:321) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:257) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:718) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:587) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:554) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:542) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1019) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4466) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5093) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1348) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:931) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:496) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:969) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:242) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:498) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:297) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:370) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177) ~[spring-boot-3.2.1.jar:3.2.1]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1091) ~[spring-context-6.1.2.jar:6.1.2]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:145) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114) ~[spring-boot-3.2.1.jar:3.2.1]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:269) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1635) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337) ~[tomcat-embed-core-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:165) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:516) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:308) ~[tomcat-embed-websocket-10.1.17.jar:10.1.17]
+	... 37 common frames omitted
+"2024-01-19 [SpringApplicationShutdownHook] DEBUG o.s.w.s.h.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=334107af-a95a-190d-f2c4-0fc103deadd3, uri=ws://localhost:8080/signal] closed with CloseStatus[code=1001, reason=The web application is stopping]
 "

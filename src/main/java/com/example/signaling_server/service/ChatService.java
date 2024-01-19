@@ -6,7 +6,9 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.web.socket.WebSocketSession;
 
-import java.util.*;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -32,7 +34,7 @@ public class ChatService {
                 .orElse(Collections.emptyMap());
     }
 
-    public void addClient(ChatRoom room, String name, WebSocketSession session){
+    public void addClient(ChatRoom room, String name, WebSocketSession session) {
         room.getClients().put(name, session);
     }
 
@@ -41,20 +43,15 @@ public class ChatService {
     }
 
 
-
-
-
     public void addRoom(ChatRoom room) {
         chatRooms.put(room.getRoomId(), room);
     }
+
     public Long getRoomId(ChatRoom room) {
         return room.getRoomId();
     }
 
-
     public ChatRoom findRoomById(Long roomId) {
         return ChatRoomMap.getInstance().getChatRooms().get(roomId);
     }
-
-
 }
