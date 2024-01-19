@@ -210,8 +210,10 @@ public class SignalHandler extends TextWebSocketHandler {
 
                 for (Map.Entry<String, WebSocketSession> client : clients.entrySet()) {
 
+                    System.out.println(client.getKey()+"한테 갈까?");
                     // send messages to all clients except current user
                     if (!client.getKey().equals(sender)) {
+                        System.out.println("보냈다!");
                         // select the same type to resend signal
                         SignalData sd = SignalData.builder()
                                 .data(data)
@@ -225,7 +227,5 @@ public class SignalHandler extends TextWebSocketHandler {
                 }
             }
         }
-
-        super.handleTextMessage(session, message);
     }
 }
